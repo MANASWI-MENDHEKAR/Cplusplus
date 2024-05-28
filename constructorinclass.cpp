@@ -1,4 +1,5 @@
 #include<iostream>
+using namespace std;
 class objectcounter{
     private :
     static int objectcount;
@@ -16,14 +17,11 @@ class objectcounter{
 
 int objectcounter::objectcount = 0 ;
 int main(){
-    std::cout<< " initial object count:"<<objectcounter::getobjectcount()<<std::endl;
+    cout<< " initial object count:"<<objectcounter::getobjectcount()<<endl;
     objectcounter obj1;
-
-    std::cout<< "object count after creating obj 1:"<<objectcounter::getobjectcount()<<std::endl;
+    cout<< "object count after creating obj 1:"<<objectcounter::getobjectcount()<<endl;
     objectcounter obj2;
-    std::cout<< "object count after creating obj 2:"<<objectcounter::getobjectcount()<<std::endl;
+    cout<< "object count after creating obj 2:"<<objectcounter::getobjectcount()<<endl;
 
     return 0;
-
-
 }
